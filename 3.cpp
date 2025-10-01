@@ -1,4 +1,6 @@
 ﻿#include <iostream>
+#include <locale.h>
+#include <Windows.h>
 
 /*
 	Типы данных		
@@ -25,7 +27,9 @@
 int main()
 {
 
-	setlocale(LC_ALL, "ru");
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+
 	srand(time(NULL));
 	/*
 	char op;
