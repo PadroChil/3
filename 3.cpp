@@ -26,6 +26,7 @@ int main()
 {
 
 	setlocale(LC_ALL, "ru");
+	srand(time(NULL));
 	/*
 	char op;
 
@@ -114,7 +115,7 @@ int main()
 	 std::cout << sum;
 	*/
 
-	std::cout << "\tКонвертер валюты";
+	/*std::cout << "\tКонвертер валюты";
 	
 
 	int chose;
@@ -167,13 +168,70 @@ int main()
 		{
 			std::cout << "\nОшибка ввода";
 		}
-	}	
+	}	*/
 
 	
+	/*int a;
+	a = rand() % 10 + 1;
+	std::cout << a;
+
+	const int size = 5;
+	int arr[size]{};
+
+	int k = 0;
+	for (int i = 0; i < size; i++)
+	{
+		arr[i] = rand() % 19 - 9;
 	
+	}
+	for (int i = 0; i < size; i++)
+	{
+		std::cout << arr[i] << " ";
+		
+
+	}
+	for (int i = 0; i < size; i += 1)
+	{
+		if (arr[i] >= 0)
+		{
+			std::cout << arr[i] << " ";
+		}                         
+	}
+
+	std::cout << "\n\n";
+	for (int i = 0; i < size; i++)
+	{
+		if (arr[i] < 0)
+		{
+			std::cout << arr[i] << " ";
+		}
+	}
+
+	std::cout << "\n\n";*/
+
+	const int row = 3, col = 4;
+	int arr[row][col]{ {3,1,2,3},{},{} };
+
+	for (int i = 0; i < row; i++)
+	{
+		for (int j = 0; j < col; j++)
+		{
+			arr[i][j] = rand() % 10;
+		}
+	}
 	
+	for (int i = 0; i < row; i++)
+	{
+		for (int j = 0; j < col; j++)
+		{
+			std::cout<< arr[i][j]<< " ";
+		}
+		std::cout << "\n";
+	}
+
+
+
+
+
 	return 0;
-
-
-
 }
